@@ -172,12 +172,18 @@
             针对患者出现的肌肉萎缩和废用性退化的问题，我们设计了电刺激装置，其灵感来源于已经在运动员训练中被广泛使用，不久前进入健身领域的肌肉电刺激$(Electrical Muscle Stimulation,EMS)$技术。\cite{wiki}
 
             \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.7\textwidth]{core-technology-ems.jpg}
-                \caption{EMS原理}
-                \label{fig:EMS}
+                \centering  %图片全局居中
+                \subfigure[EMS原理]{
+                \label{fig:EMS_Principle}
+                \includegraphics[width=0.5\textwidth]{core-technology-ems.jpg}}
+                \subfigure[EMS使用]{
+                \label{EMS}
+                \includegraphics[width=0.4\textwidth]{ems.jpeg}}
+                \label{Fig.main}
+                \caption{EMS原理及使用}
             \end{figure}
-            如图\ref{fig:EMS}，该技术的原理非常简单：正常人的肌肉活动过程是由大脑发出动作电位，一路传播到特定的肌肉部位，刺激相应的肌肉收缩。EMS的原理就是将大脑发出的信号直接用外界的电刺激代替，即不经过大脑，直接刺激对应的肌肉。数据显示，使用EMS技术进行日常训练的运动员的肌肉力量最多可以在正常训练的基础上增强约40\%。
+           
+            如图\ref{fig:EMS_Principle}，该技术的原理非常简单：正常人的肌肉活动过程是由大脑发出动作电位，一路传播到特定的肌肉部位，刺激相应的肌肉收缩。EMS的原理就是将大脑发出的信号直接用外界的电刺激代替，即不经过大脑，直接刺激对应的肌肉。如图\ref{EMS}使用时将电极贴在肌肉的两端即可达到此目的。数据显示，使用EMS技术进行日常训练的运动员的肌肉力量最多可以在正常训练的基础上增强约40\%。
 
             我们将这一技术集成在我们的装置中。根据手臂肌群的位置（肱二头肌、肱三头肌均位于左右两侧），我们将4组电极嵌入U形槽侧面（见图\ref{General}中标红色的凹槽位置），分别置于大臂、前臂肌群的两端。使用时只需使手臂贴紧U形槽侧面，该装置即可发挥作用。电刺激的强度可以根据需要调节，确保刺激强度具有锻炼效果而又不会使得肌肉僵直。
     \subsection{项目特点}
